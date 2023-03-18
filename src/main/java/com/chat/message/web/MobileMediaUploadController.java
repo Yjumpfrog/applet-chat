@@ -8,13 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
-/**
- * @author lisw
- * @program ly-project
- * @description
- * @createDate 2021-05-30 22:04:23
- * @slogan 长风破浪会有时，直挂云帆济沧海。
- **/
+
 @RestController
 @RequestMapping("/mobile/media")
 public class MobileMediaUploadController {

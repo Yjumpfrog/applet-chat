@@ -12,13 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * @author lisw
- * @program message
- * @description
- * @createDate 2021-08-18 17:10:38
- * @slogan 长风破浪会有时，直挂云帆济沧海。
- **/
+
 @Service
 @Slf4j
 public class MessageServiceImpl extends ServiceImpl<MessageDao, BusinessMessageEntity> implements MessageService {

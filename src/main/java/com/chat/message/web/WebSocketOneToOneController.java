@@ -19,17 +19,9 @@ import javax.websocket.server.PathParam;
 import java.io.IOException;
 
 /**
- * @author lisw
- * @program ly-project
- * @description 聊天
- * @createDate 2021-05-30 11:32:39
- * @slogan 长风破浪会有时，直挂云帆济沧海。
- *
  *  描述:
  *  一对一聊天
  *
- * @ServerEndpoint 注解是一个类层次的注解，它的功能主要是将目前的类定义成一个websocket服务器端,
- *                 注解的值将被用于监听用户连接的终端访问URL地址,客户端可以通过这个URL来连接到WebSocket服务器端
  */
 @RestController
 @ServerEndpoint(value = "/webSocketOneToOne/{sendId}/{roomId}")

@@ -5,13 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
-/**
- * @author lisw
- * @program message
- * @description
- * @createDate 2021-11-03 10:09:16
- * @slogan 长风破浪会有时，直挂云帆济沧海。
- **/
+
 @Component
 public class SpringContextHolder implements ApplicationContextAware {
     private static ApplicationContext applicationContext = null;

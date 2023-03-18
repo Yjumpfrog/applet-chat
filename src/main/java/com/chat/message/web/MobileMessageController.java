@@ -12,13 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-/**
- * @author lisw
- * @program ly-project
- * @description 消息接口
- * @createDate 2021-06-02 17:08:45
- * @slogan 长风破浪会有时，直挂云帆济沧海。
- **/
+
 @RestController
 @RequestMapping("/mobile/message")
 public class MobileMessageController {

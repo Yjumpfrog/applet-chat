@@ -9,20 +9,11 @@ import com.chat.message.util.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * @author lisw
- * @program message
- * @description
- * @createDate 2021-08-18 17:08:18
- * @slogan 长风破浪会有时，直挂云帆济沧海。
- **/
+
 @RestController
 @RequestMapping("/mobile/register")
 @Slf4j
@@ -35,8 +26,8 @@ public class MobileApiController {
     public R verifyMember(@PathVariable String openId) {
         try {
             QueryWrapper queryWrapper = new QueryWrapper();
-            queryWrapper.eq("open_id",openId);
-            User user = userService.getOne(queryWrapper,false);
+            queryWrapper.eq("open_id", openId);
+            User user = userService.getOne(queryWrapper, false);
             if (user != null) {
                 return R.ok().put("data", user);
             }
@@ -52,7 +43,7 @@ public class MobileApiController {
     public R getMemberList(@PathVariable String openId) {
         try {
             QueryWrapper queryWrapper = new QueryWrapper();
-            queryWrapper.ne("open_id",openId);
+            queryWrapper.ne("open_id", openId);
             List<User> userList = userService.list(queryWrapper);
             if (userList != null) {
                 return R.ok().put("data", userList);
@@ -64,4 +55,19 @@ public class MobileApiController {
             return R.error("注册失败");
         }
     }
+
+    @PostMapping("/getSMS/{phone}")
+    public R sendCode(@PathVariable Integer phone) {
+        return R.ok().put("data", 200);
+//        return R.error("注册失败");
+    }
+
+//    @PostMapping("/getSMS")
+//    public R sendCode(@RequestParam("phone") Integer phone){
+//        return R.ok().put("data", phone);
+//        return R.error("注册失败");
+//    }
+
+
+
 }

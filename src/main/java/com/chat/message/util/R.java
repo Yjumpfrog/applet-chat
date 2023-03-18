@@ -3,13 +3,6 @@ package com.chat.message.util;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author lisw
- * @program message
- * @description
- * @createDate 2021-08-18 17:07:22
- * @slogan 长风破浪会有时，直挂云帆济沧海。
- **/
 public class R extends HashMap<String, Object> {
     private static final long serialVersionUID = 1L;
 

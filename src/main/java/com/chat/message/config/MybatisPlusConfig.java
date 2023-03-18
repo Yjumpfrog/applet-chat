@@ -1,11 +1,3 @@
-/**
- * Copyright (c) 2016-2019 人人开源 All rights reserved.
- *
- * https://www.renren.io
- *
- * 版权所有，侵权必究！
- */
-
 package com.chat.message.config;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
@@ -19,7 +11,6 @@ import java.util.Date;
 /**
  * mybatis-plus配置
  *
- * @author lisw
  */
 @Configuration
 

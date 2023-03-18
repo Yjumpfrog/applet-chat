@@ -8,13 +8,7 @@ import lombok.Data;
 
 import java.util.Date;
 
-/**
- * @author lisw
- * @program message
- * @description
- * @createDate 2021-08-18 17:03:58
- * @slogan 长风破浪会有时，直挂云帆济沧海。
- **/
+
 @Data
 @TableName("message")
 public class BusinessMessageEntity {

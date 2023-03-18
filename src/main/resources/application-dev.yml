@@ -1,4 +1,5 @@
 spring:
+
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
@@ -33,17 +34,18 @@ spring:
           config:
             multi-statement-allow: true
 # 小程序配置
-miniprogram:
-  appId:
-  appSecret:
+#miniprogram:
+#  appId:
+#  appSecret:
 oss:
-  aliyunBucketName:
-  aliyunAccessKeySecret:
-  aliyunAccessKeyId:
-  aliyunEndPoint:
-  aliyunPrefix:
-  aliyunDomain:
+  aliyunBucketName: ldzy-zhang
+  aliyunAccessKeySecret: 5h3yA8etPbylxWMJjhXaAxzyZjr20I
+  aliyunAccessKeyId: LTAI5tRZssYLATQ7tWGtrMEZ
+  aliyunEndPoint: oss-cn-shenzhen.aliyuncs.com
+  aliyunPrefix: message
+  aliyunDomain: https://ldzy-zhang.oss-cn-shenzhen.aliyuncs.com
+
 logging:
-  level:
-    com.example.gradle.mapper: debug
+    level:
+      com.example.gradle.mapper: debug
 
