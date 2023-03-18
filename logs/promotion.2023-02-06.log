@@ -1,0 +1,309 @@
+2023-02-06 23:23:52.632 [restartedMain] INFO  com.chat.message.MessageApplication - Starting MessageApplication using Java 1.8.0_102 on LAPTOP-2IRQMR2A with PID 18344 (C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat\target\classes started by 张强 in C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat)
+2023-02-06 23:23:52.636 [restartedMain] DEBUG com.chat.message.MessageApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2023-02-06 23:23:52.637 [restartedMain] INFO  com.chat.message.MessageApplication - The following profiles are active: dev
+2023-02-06 23:23:52.714 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-06 23:23:52.714 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-06 23:23:54.592 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http)
+2023-02-06 23:23:54.606 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2023-02-06 23:23:54.607 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-06 23:23:54.607 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-02-06 23:23:54.805 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring embedded WebApplicationContext
+2023-02-06 23:23:54.806 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2090 ms
+2023-02-06 23:23:55.091 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-02-06 23:23:55.511 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-02-06 23:23:58.326 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-02-06 23:23:58.361 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2023-02-06 23:23:58.387 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '/message-server'
+2023-02-06 23:23:58.403 [restartedMain] INFO  com.chat.message.MessageApplication - Started MessageApplication in 6.722 seconds (JVM running for 9.981)
+2023-02-06 23:24:24.692 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-06 23:24:24.693 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-06 23:24:24.695 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-02-06 23:24:24.855 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id <> ?) 
+2023-02-06 23:24:24.887 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-02-06 23:24:24.927 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 4
+2023-02-06 23:24:38.807 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:24:38.807 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:24:38.808 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 2222(String)
+2023-02-06 23:24:38.808 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-02-06 23:24:38.810 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:24:38.818 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:24:39.025 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:24:39.026 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:24:39.027 [http-nio-9999-exec-4] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:2
+2023-02-06 23:24:39.053 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:24:39.054 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:24:39.060 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:24:39.067 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.update - ==>  Preparing: UPDATE message SET is_read=? WHERE (del_flag = ? AND sender = ? AND receiver = ?) 
+2023-02-06 23:24:39.069 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.update - ==> Parameters: 1(Integer), 0(Integer), 2(Long), 0(Long)
+2023-02-06 23:24:39.071 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.update - <==    Updates: 0
+2023-02-06 23:25:04.059 [http-nio-9999-exec-7] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:2
+2023-02-06 23:25:09.167 [http-nio-9999-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/message-server] threw exception [Request processing failed; nested exception is com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.] with root cause
+com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.
+	at com.aliyun.oss.common.auth.DefaultCredentialProvider.checkCredentials(DefaultCredentialProvider.java:63)
+	at com.aliyun.oss.common.auth.DefaultCredentialProvider.<init>(DefaultCredentialProvider.java:38)
+	at com.aliyun.oss.common.auth.DefaultCredentialProvider.<init>(DefaultCredentialProvider.java:34)
+	at com.aliyun.oss.OSSClient.<init>(OSSClient.java:129)
+	at com.chat.message.config.AliyunCloudStorageService.init(AliyunCloudStorageService.java:34)
+	at com.chat.message.config.AliyunCloudStorageService.<init>(AliyunCloudStorageService.java:29)
+	at com.chat.message.config.OSSFactory.build(OSSFactory.java:21)
+	at com.chat.message.web.MobileMediaUploadController.upload(MobileMediaUploadController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2023-02-06 23:25:48.735 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.update - ==>  Preparing: UPDATE message SET is_last=? WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:25:48.736 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.update - ==> Parameters: 0(Integer), 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:25:48.739 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.update - <==    Updates: 21
+2023-02-06 23:25:48.745 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.insert - ==>  Preparing: INSERT INTO message ( type, content, content_type, is_read, sender, receiver, request_id, is_last, created_by, created_time, updated_by, updated_time, del_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-02-06 23:25:48.752 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.insert - ==> Parameters: 0(Integer), [{"type":2,"content":"[尴尬]","imageClass":"smiley_10"}](String), 0(Integer), 0(String), 0(Long), 2(Long), 81e329b2-fbf5-40bc-aee5-c08c93cb1020(String), true(Boolean), null, 2023-02-06 23:25:48.705(Timestamp), null, null, 0(String)
+2023-02-06 23:25:48.759 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.insert - <==    Updates: 1
+2023-02-06 23:26:04.335 [http-nio-9999-exec-2] INFO  com.chat.message.web.WebSocketOneToOneController - 此二人聊天，距离上一次聊天时间相差分钟数：1
+2023-02-06 23:26:04.339 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.update - ==>  Preparing: UPDATE message SET is_last=? WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:26:04.340 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.update - ==> Parameters: 0(Integer), 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:26:04.343 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.update - <==    Updates: 22
+2023-02-06 23:26:04.345 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.insert - ==>  Preparing: INSERT INTO message ( type, content, content_type, is_read, sender, receiver, request_id, is_last, created_by, created_time, updated_by, updated_time, del_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-02-06 23:26:04.345 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.insert - ==> Parameters: 0(Integer), [{"type":2,"content":"[色]","imageClass":"smiley_2"},{"type":2,"content":"[色]","imageClass":"smiley_2"}](String), 0(Integer), 0(String), 0(Long), 2(Long), 2783fa32-5755-4ba3-90a0-8179d66a7e07(String), true(Boolean), null, 2023-02-06 23:26:04.273(Timestamp), null, null, 0(String)
+2023-02-06 23:26:04.347 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.insert - <==    Updates: 1
+2023-02-06 23:27:04.420 [http-nio-9999-exec-3] INFO  com.chat.message.web.WebSocketOneToOneController - 此二人聊天，距离上一次聊天时间相差分钟数：1
+2023-02-06 23:27:04.432 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.update - ==>  Preparing: UPDATE message SET is_last=? WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:27:04.432 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.update - ==> Parameters: 0(Integer), 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:27:04.435 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.update - <==    Updates: 23
+2023-02-06 23:27:04.437 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.insert - ==>  Preparing: INSERT INTO message ( type, content, content_type, is_read, sender, receiver, request_id, is_last, created_by, created_time, updated_by, updated_time, del_flag ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2023-02-06 23:27:04.439 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.insert - ==> Parameters: 0(Integer), [{"type":1,"content":"小拳拳\n\n\n"}](String), 0(Integer), 0(String), 0(Long), 2(Long), 327d577f-3555-48be-bcd7-33a2a63f4192(String), true(Boolean), null, 2023-02-06 23:27:04.42(Timestamp), null, null, 0(String)
+2023-02-06 23:27:04.440 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.insert - <==    Updates: 1
+2023-02-06 23:29:08.178 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:29:08.180 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-02-06 23:29:08.182 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:29:08.182 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:29:08.184 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 3333(String)
+2023-02-06 23:29:08.186 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:29:08.324 [http-nio-9999-exec-7] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:3
+2023-02-06 23:29:08.328 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:29:08.329 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 3(Long), 0(Long), 3(Long)
+2023-02-06 23:29:08.332 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.update - ==>  Preparing: UPDATE message SET is_read=? WHERE (del_flag = ? AND sender = ? AND receiver = ?) 
+2023-02-06 23:29:08.334 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.update - ==> Parameters: 1(Integer), 0(Integer), 3(Long), 0(Long)
+2023-02-06 23:29:08.336 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.update - <==    Updates: 0
+2023-02-06 23:29:11.944 [http-nio-9999-exec-9] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:2
+2023-02-06 23:31:50.027 [http-nio-9999-exec-4] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:2
+2023-02-06 23:31:55.744 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:31:55.745 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-02-06 23:31:55.746 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:31:55.746 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:31:55.747 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 4444(String)
+2023-02-06 23:31:55.748 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:31:55.890 [http-nio-9999-exec-7] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:4
+2023-02-06 23:31:55.897 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:31:55.899 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 4(Long), 0(Long), 4(Long)
+2023-02-06 23:31:55.908 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:31:55.908 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 4(Long), 0(Long), 4(Long), 0(Long), 2(Long)
+2023-02-06 23:31:55.910 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:31:55.914 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.update - ==>  Preparing: UPDATE message SET is_read=? WHERE (del_flag = ? AND sender = ? AND receiver = ?) 
+2023-02-06 23:31:55.914 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.update - ==> Parameters: 1(Integer), 0(Integer), 4(Long), 0(Long)
+2023-02-06 23:31:55.918 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.MessageDao.update - <==    Updates: 3
+2023-02-06 23:31:59.591 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:31:59.592 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 3333(String)
+2023-02-06 23:31:59.593 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:31:59.594 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:31:59.594 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-02-06 23:31:59.595 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:31:59.757 [http-nio-9999-exec-3] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:3
+2023-02-06 23:31:59.762 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:31:59.762 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 3(Long), 0(Long), 3(Long)
+2023-02-06 23:31:59.765 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.MessageDao.update - ==>  Preparing: UPDATE message SET is_read=? WHERE (del_flag = ? AND sender = ? AND receiver = ?) 
+2023-02-06 23:31:59.766 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.MessageDao.update - ==> Parameters: 1(Integer), 0(Integer), 3(Long), 0(Long)
+2023-02-06 23:31:59.767 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.MessageDao.update - <==    Updates: 0
+2023-02-06 23:32:01.611 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:32:01.612 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 2222(String)
+2023-02-06 23:32:01.615 [http-nio-9999-exec-7] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:32:01.615 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:32:01.616 [http-nio-9999-exec-7] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-02-06 23:32:01.618 [http-nio-9999-exec-7] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:32:01.785 [http-nio-9999-exec-8] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:2
+2023-02-06 23:32:01.793 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:32:01.794 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:32:01.797 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:32:01.797 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:32:01.801 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:32:01.804 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.MessageDao.update - ==>  Preparing: UPDATE message SET is_read=? WHERE (del_flag = ? AND sender = ? AND receiver = ?) 
+2023-02-06 23:32:01.805 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.MessageDao.update - ==> Parameters: 1(Integer), 0(Integer), 2(Long), 0(Long)
+2023-02-06 23:32:01.806 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.MessageDao.update - <==    Updates: 0
+2023-02-06 23:32:02.955 [http-nio-9999-exec-10] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:32:02.956 [http-nio-9999-exec-10] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:32:02.958 [http-nio-9999-exec-10] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:32:02.958 [http-nio-9999-exec-10] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 2(Long), 2(Long)
+2023-02-06 23:32:02.962 [http-nio-9999-exec-10] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:32:03.729 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:32:03.730 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:32:03.731 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:32:03.732 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 4(Long), 2(Long)
+2023-02-06 23:32:03.734 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:32:04.488 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:32:04.489 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:32:04.491 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:32:04.491 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 6(Long), 2(Long)
+2023-02-06 23:32:04.494 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:32:05.372 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:32:05.373 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:32:05.374 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:32:05.374 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 8(Long), 2(Long)
+2023-02-06 23:32:05.376 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:32:07.427 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:32:07.428 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:32:07.430 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:32:07.430 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 10(Long), 2(Long)
+2023-02-06 23:32:07.435 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:32:08.549 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:32:08.550 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:32:08.552 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:32:08.552 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 12(Long), 2(Long)
+2023-02-06 23:32:08.554 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:32:09.603 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:32:09.604 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:32:09.606 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:32:09.607 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 14(Long), 2(Long)
+2023-02-06 23:32:09.609 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:44:48.789 [restartedMain] INFO  com.chat.message.MessageApplication - Starting MessageApplication using Java 1.8.0_102 on LAPTOP-2IRQMR2A with PID 2432 (C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat\target\classes started by 张强 in C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat)
+2023-02-06 23:44:48.794 [restartedMain] DEBUG com.chat.message.MessageApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2023-02-06 23:44:48.794 [restartedMain] INFO  com.chat.message.MessageApplication - The following profiles are active: dev
+2023-02-06 23:44:48.871 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-06 23:44:48.872 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-06 23:44:50.729 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http)
+2023-02-06 23:44:50.743 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2023-02-06 23:44:50.745 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-06 23:44:50.746 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-02-06 23:44:50.945 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring embedded WebApplicationContext
+2023-02-06 23:44:50.945 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2073 ms
+2023-02-06 23:44:51.218 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-02-06 23:44:51.655 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-02-06 23:44:54.543 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-02-06 23:44:54.578 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2023-02-06 23:44:54.603 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '/message-server'
+2023-02-06 23:44:54.620 [restartedMain] INFO  com.chat.message.MessageApplication - Started MessageApplication in 6.713 seconds (JVM running for 9.293)
+2023-02-06 23:44:58.882 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-06 23:44:58.883 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-06 23:44:58.884 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-02-06 23:44:59.054 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id <> ?) 
+2023-02-06 23:44:59.086 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-02-06 23:44:59.130 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 4
+2023-02-06 23:47:09.745 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:47:09.747 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-02-06 23:47:09.749 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:47:09.750 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id FROM user WHERE (open_id = ?) 
+2023-02-06 23:47:09.751 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 2222(String)
+2023-02-06 23:47:09.760 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-02-06 23:47:09.967 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-02-06 23:47:09.968 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:47:09.988 [http-nio-9999-exec-5] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:2
+2023-02-06 23:47:09.991 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-02-06 23:47:09.992 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-02-06 23:47:10.000 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-02-06 23:47:10.009 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.update - ==>  Preparing: UPDATE message SET is_read=? WHERE (del_flag = ? AND sender = ? AND receiver = ?) 
+2023-02-06 23:47:10.011 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.update - ==> Parameters: 1(Integer), 0(Integer), 2(Long), 0(Long)
+2023-02-06 23:47:10.012 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.MessageDao.update - <==    Updates: 0
+2023-02-06 23:47:17.152 [http-nio-9999-exec-8] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:2
+2023-02-06 23:47:18.827 [http-nio-9999-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/message-server] threw exception [Request processing failed; nested exception is com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.] with root cause
+com.aliyun.oss.common.auth.InvalidCredentialsException: Access key id should not be null or empty.
+	at com.aliyun.oss.common.auth.DefaultCredentialProvider.checkCredentials(DefaultCredentialProvider.java:63)
+	at com.aliyun.oss.common.auth.DefaultCredentialProvider.<init>(DefaultCredentialProvider.java:38)
+	at com.aliyun.oss.common.auth.DefaultCredentialProvider.<init>(DefaultCredentialProvider.java:34)
+	at com.aliyun.oss.OSSClient.<init>(OSSClient.java:129)
+	at com.chat.message.config.AliyunCloudStorageService.init(AliyunCloudStorageService.java:34)
+	at com.chat.message.config.AliyunCloudStorageService.<init>(AliyunCloudStorageService.java:29)
+	at com.chat.message.config.OSSFactory.build(OSSFactory.java:21)
+	at com.chat.message.web.MobileMediaUploadController.upload(MobileMediaUploadController.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)

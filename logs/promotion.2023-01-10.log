@@ -1,0 +1,18 @@
+2023-01-10 10:11:10.858 [restartedMain] INFO  com.chat.message.MessageApplication - Starting MessageApplication using Java 1.8.0_212 on DESKTOP-R37GD10 with PID 11064 (D:\yz\项目\applet-chat\target\classes started by yz in D:\yz\项目\applet-chat)
+2023-01-10 10:11:10.860 [restartedMain] DEBUG com.chat.message.MessageApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2023-01-10 10:11:10.860 [restartedMain] INFO  com.chat.message.MessageApplication - The following profiles are active: dev
+2023-01-10 10:11:10.919 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-10 10:11:10.920 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-10 10:11:12.378 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http)
+2023-01-10 10:11:12.386 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2023-01-10 10:11:12.387 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-01-10 10:11:12.387 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-01-10 10:11:12.477 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring embedded WebApplicationContext
+2023-01-10 10:11:12.477 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1557 ms
+2023-01-10 10:11:12.646 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-01-10 10:11:13.022 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-01-10 10:11:14.080 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-01-10 10:11:14.101 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2023-01-10 10:11:14.145 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '/message-server'
+2023-01-10 10:11:14.153 [restartedMain] INFO  com.chat.message.MessageApplication - Started MessageApplication in 4.277 seconds (JVM running for 5.031)
+2023-01-10 10:49:51.361 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

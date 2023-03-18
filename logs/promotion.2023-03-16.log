@@ -1,0 +1,110 @@
+2023-03-16 00:10:24.336 [restartedMain] INFO  com.chat.message.MessageApplication - Starting MessageApplication using Java 1.8.0_102 on LAPTOP-2IRQMR2A with PID 22716 (C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat\target\classes started by 张强 in C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat)
+2023-03-16 00:10:24.339 [restartedMain] DEBUG com.chat.message.MessageApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2023-03-16 00:10:24.339 [restartedMain] INFO  com.chat.message.MessageApplication - The following profiles are active: dev
+2023-03-16 00:10:24.381 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\JetBrains\IntelliJ IDEA 2017.3\plugins\maven\lib\maven3\respository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/D:/JetBrains/IntelliJ%20IDEA%202017.3/plugins/maven/lib/maven3/respository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2023-03-16 00:10:24.381 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\JetBrains\IntelliJ IDEA 2017.3\plugins\maven\lib\maven3\respository\com\sun\xml\bind\jaxb-impl\2.3.0\jaxb-impl-2.3.0.jar referenced one or more files that do not exist: file:/D:/JetBrains/IntelliJ%20IDEA%202017.3/plugins/maven/lib/maven3/respository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-core.jar
+2023-03-16 00:10:24.381 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-16 00:10:24.381 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-16 00:10:25.583 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http)
+2023-03-16 00:10:25.592 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2023-03-16 00:10:25.593 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-16 00:10:25.593 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-16 00:10:25.726 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring embedded WebApplicationContext
+2023-03-16 00:10:25.727 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1345 ms
+2023-03-16 00:10:25.882 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-03-16 00:10:26.155 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-03-16 00:10:27.560 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-16 00:10:27.594 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2023-03-16 00:10:27.618 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '/message-server'
+2023-03-16 00:10:27.632 [restartedMain] INFO  com.chat.message.MessageApplication - Started MessageApplication in 3.855 seconds (JVM running for 5.676)
+2023-03-16 00:10:36.872 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16 00:10:36.872 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-16 00:10:36.873 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-16 00:10:36.937 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectOne - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ?) 
+2023-03-16 00:10:36.953 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectOne - ==> Parameters: 19936771062(String)
+2023-03-16 00:10:36.984 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectOne - <==      Total: 1
+2023-03-16 00:11:28.525 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectOne - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ?) 
+2023-03-16 00:11:28.526 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectOne - ==> Parameters: 19936771062(String)
+2023-03-16 00:11:28.527 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectOne - <==      Total: 1
+2023-03-16 00:12:17.858 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectOne - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ?) 
+2023-03-16 00:12:17.858 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectOne - ==> Parameters: 19936771062(String)
+2023-03-16 00:12:17.859 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectOne - <==      Total: 1
+2023-03-16 00:13:01.080 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectOne - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ?) 
+2023-03-16 00:13:01.081 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectOne - ==> Parameters: 19936771062(String)
+2023-03-16 00:13:01.082 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectOne - <==      Total: 1
+2023-03-16 00:14:19.645 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectOne - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ?) 
+2023-03-16 00:14:19.646 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectOne - ==> Parameters: 19936771062(String)
+2023-03-16 00:14:19.647 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectOne - <==      Total: 1
+2023-03-16 00:15:34.686 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.UserDao.selectOne - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ?) 
+2023-03-16 00:15:34.686 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.UserDao.selectOne - ==> Parameters: 19936771062(String)
+2023-03-16 00:15:34.687 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.UserDao.selectOne - <==      Total: 0
+2023-03-16 00:55:34.292 [restartedMain] INFO  com.chat.message.MessageApplication - Starting MessageApplication using Java 1.8.0_102 on LAPTOP-2IRQMR2A with PID 28404 (C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat\target\classes started by 张强 in C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat)
+2023-03-16 00:55:34.295 [restartedMain] DEBUG com.chat.message.MessageApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2023-03-16 00:55:34.295 [restartedMain] INFO  com.chat.message.MessageApplication - The following profiles are active: dev
+2023-03-16 00:55:34.334 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\JetBrains\IntelliJ IDEA 2017.3\plugins\maven\lib\maven3\respository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/D:/JetBrains/IntelliJ%20IDEA%202017.3/plugins/maven/lib/maven3/respository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2023-03-16 00:55:34.335 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\JetBrains\IntelliJ IDEA 2017.3\plugins\maven\lib\maven3\respository\com\sun\xml\bind\jaxb-impl\2.3.0\jaxb-impl-2.3.0.jar referenced one or more files that do not exist: file:/D:/JetBrains/IntelliJ%20IDEA%202017.3/plugins/maven/lib/maven3/respository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-core.jar
+2023-03-16 00:55:34.335 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-16 00:55:34.335 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-16 00:55:35.542 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http)
+2023-03-16 00:55:35.550 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2023-03-16 00:55:35.551 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-16 00:55:35.551 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-16 00:55:35.683 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring embedded WebApplicationContext
+2023-03-16 00:55:35.683 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1347 ms
+2023-03-16 00:55:35.814 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-03-16 00:55:36.068 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-03-16 00:55:37.355 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-16 00:55:37.371 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2023-03-16 00:55:37.387 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '/message-server'
+2023-03-16 00:55:37.395 [restartedMain] INFO  com.chat.message.MessageApplication - Started MessageApplication in 3.655 seconds (JVM running for 5.373)
+2023-03-16 00:55:59.138 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-16 00:55:59.138 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-16 00:55:59.138 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-03-16 00:55:59.229 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectOne - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ?) 
+2023-03-16 00:55:59.245 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectOne - ==> Parameters: 19936771062(String)
+2023-03-16 00:55:59.261 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectOne - <==      Total: 0
+2023-03-16 00:56:07.188 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ?) 
+2023-03-16 00:56:07.188 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 19936771062(String)
+2023-03-16 00:56:07.189 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 0
+2023-03-16 00:56:07.191 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.insert - ==>  Preparing: INSERT INTO user ( username, password ) VALUES ( ?, ? ) 
+2023-03-16 00:56:07.192 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.insert - ==> Parameters: 19936771062(String), 123456(String)
+2023-03-16 00:56:07.195 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.insert - <==    Updates: 1
+2023-03-16 00:57:48.812 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ? AND password = ?) 
+2023-03-16 00:57:48.813 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 123(String), 123(String)
+2023-03-16 00:57:48.814 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 0
+2023-03-16 00:57:57.327 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ? AND password = ?) 
+2023-03-16 00:57:57.327 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 19936771062(String), 123(String)
+2023-03-16 00:57:57.329 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 0
+2023-03-16 00:58:05.947 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ? AND password = ?) 
+2023-03-16 00:58:05.948 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 19936771060(String), 123(String)
+2023-03-16 00:58:05.951 [http-nio-9999-exec-6] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-03-16 00:58:06.072 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (open_id <> ?) 
+2023-03-16 00:58:06.073 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-03-16 00:58:06.075 [http-nio-9999-exec-8] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 5
+2023-03-16 00:58:07.624 [http-nio-9999-exec-10] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (open_id = ?) 
+2023-03-16 00:58:07.625 [http-nio-9999-exec-10] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 2222(String)
+2023-03-16 00:58:07.626 [http-nio-9999-exec-10] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-03-16 00:58:07.629 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (open_id = ?) 
+2023-03-16 00:58:07.629 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-03-16 00:58:07.636 [http-nio-9999-exec-9] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-03-16 00:58:07.813 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT COUNT(1) FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) 
+2023-03-16 00:58:07.814 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-03-16 00:58:07.836 [http-nio-9999-exec-7] INFO  com.chat.message.web.WebSocketOneToOneController - sendId:0roomId:2
+2023-03-16 00:58:07.839 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.selectPage - ==>  Preparing: SELECT id,type,content,content_type,is_read,sender,receiver,request_id,is_last,created_by,created_time,updated_by,updated_time,del_flag,status,remarks FROM message WHERE (del_flag = ? AND ((sender = ? AND receiver = ?) OR (receiver = ? AND sender = ?))) ORDER BY created_time DESC LIMIT ?,? 
+2023-03-16 00:58:07.840 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.selectPage - ==> Parameters: 0(Integer), 0(Long), 2(Long), 0(Long), 2(Long), 0(Long), 2(Long)
+2023-03-16 00:58:07.847 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.selectPage - <==      Total: 2
+2023-03-16 00:58:07.852 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.update - ==>  Preparing: UPDATE message SET is_read=? WHERE (del_flag = ? AND sender = ? AND receiver = ?) 
+2023-03-16 00:58:07.855 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.update - ==> Parameters: 1(Integer), 0(Integer), 2(Long), 0(Long)
+2023-03-16 00:58:07.856 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.MessageDao.update - <==    Updates: 0
+2023-03-16 00:58:22.457 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectOne - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ?) 
+2023-03-16 00:58:22.457 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectOne - ==> Parameters: 19936771066(String)
+2023-03-16 00:58:22.458 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectOne - <==      Total: 0
+2023-03-16 00:58:30.486 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ?) 
+2023-03-16 00:58:30.487 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 19936771066(String)
+2023-03-16 00:58:30.488 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 0
+2023-03-16 00:58:30.489 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.insert - ==>  Preparing: INSERT INTO user ( username, password ) VALUES ( ?, ? ) 
+2023-03-16 00:58:30.489 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.insert - ==> Parameters: 19936771066(String), 123(String)
+2023-03-16 00:58:30.493 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.insert - <==    Updates: 1
+2023-03-16 00:58:31.444 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (open_id <> ?) 
+2023-03-16 00:58:31.445 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-03-16 00:58:31.449 [http-nio-9999-exec-5] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 5

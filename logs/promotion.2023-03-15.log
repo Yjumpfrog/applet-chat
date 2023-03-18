@@ -1,0 +1,87 @@
+2023-03-15 23:23:03.814 [restartedMain] INFO  com.chat.message.MessageApplication - Starting MessageApplication using Java 1.8.0_102 on LAPTOP-2IRQMR2A with PID 19056 (C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat\target\classes started by 张强 in C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat)
+2023-03-15 23:23:03.814 [restartedMain] DEBUG com.chat.message.MessageApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2023-03-15 23:23:03.814 [restartedMain] INFO  com.chat.message.MessageApplication - The following profiles are active: dev
+2023-03-15 23:23:03.849 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\JetBrains\IntelliJ IDEA 2017.3\plugins\maven\lib\maven3\respository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/D:/JetBrains/IntelliJ%20IDEA%202017.3/plugins/maven/lib/maven3/respository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2023-03-15 23:23:03.849 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\JetBrains\IntelliJ IDEA 2017.3\plugins\maven\lib\maven3\respository\com\sun\xml\bind\jaxb-impl\2.3.0\jaxb-impl-2.3.0.jar referenced one or more files that do not exist: file:/D:/JetBrains/IntelliJ%20IDEA%202017.3/plugins/maven/lib/maven3/respository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-core.jar
+2023-03-15 23:23:03.849 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-15 23:23:03.849 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-15 23:23:05.238 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http)
+2023-03-15 23:23:05.242 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2023-03-15 23:23:05.242 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-15 23:23:05.242 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-15 23:23:05.402 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring embedded WebApplicationContext
+2023-03-15 23:23:05.402 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1553 ms
+2023-03-15 23:23:05.563 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-03-15 23:23:05.857 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-03-15 23:23:07.141 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-15 23:23:07.157 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2023-03-15 23:23:07.172 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '/message-server'
+2023-03-15 23:23:07.192 [restartedMain] INFO  com.chat.message.MessageApplication - Started MessageApplication in 3.91 seconds (JVM running for 6.012)
+2023-03-15 23:41:01.046 [restartedMain] INFO  com.chat.message.MessageApplication - Starting MessageApplication using Java 1.8.0_102 on LAPTOP-2IRQMR2A with PID 19472 (C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat\target\classes started by 张强 in C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat)
+2023-03-15 23:41:01.048 [restartedMain] DEBUG com.chat.message.MessageApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2023-03-15 23:41:01.048 [restartedMain] INFO  com.chat.message.MessageApplication - The following profiles are active: dev
+2023-03-15 23:41:01.088 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\JetBrains\IntelliJ IDEA 2017.3\plugins\maven\lib\maven3\respository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/D:/JetBrains/IntelliJ%20IDEA%202017.3/plugins/maven/lib/maven3/respository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2023-03-15 23:41:01.088 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\JetBrains\IntelliJ IDEA 2017.3\plugins\maven\lib\maven3\respository\com\sun\xml\bind\jaxb-impl\2.3.0\jaxb-impl-2.3.0.jar referenced one or more files that do not exist: file:/D:/JetBrains/IntelliJ%20IDEA%202017.3/plugins/maven/lib/maven3/respository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-core.jar
+2023-03-15 23:41:01.088 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-15 23:41:01.088 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-15 23:41:02.347 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http)
+2023-03-15 23:41:02.357 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2023-03-15 23:41:02.357 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-15 23:41:02.357 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-15 23:41:02.487 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring embedded WebApplicationContext
+2023-03-15 23:41:02.487 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1399 ms
+2023-03-15 23:41:02.637 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-03-15 23:41:02.907 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-03-15 23:41:04.297 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-15 23:41:04.317 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2023-03-15 23:41:04.332 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '/message-server'
+2023-03-15 23:41:04.342 [restartedMain] INFO  com.chat.message.MessageApplication - Started MessageApplication in 3.839 seconds (JVM running for 5.619)
+2023-03-15 23:53:57.925 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 23:53:57.926 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-15 23:53:57.927 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-15 23:53:58.085 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ? AND password = ?) 
+2023-03-15 23:53:58.104 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1(String), 1(String)
+2023-03-15 23:53:58.117 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 0
+2023-03-15 23:53:58.917 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ? AND password = ?) 
+2023-03-15 23:53:58.918 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1(String), 1(String)
+2023-03-15 23:53:58.919 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 0
+2023-03-15 23:54:25.963 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ? AND password = ?) 
+2023-03-15 23:54:25.964 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 19936771062(String), 123(String)
+2023-03-15 23:54:25.967 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-03-15 23:55:18.508 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ? AND password = ?) 
+2023-03-15 23:55:18.509 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 19936771062(String), 123(String)
+2023-03-15 23:55:18.510 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-03-15 23:56:42.600 [restartedMain] INFO  com.chat.message.MessageApplication - Starting MessageApplication using Java 1.8.0_102 on LAPTOP-2IRQMR2A with PID 26104 (C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat\target\classes started by 张强 in C:\Users\张强\Documents\WeChat Files\wxid_68p7c2r277zq22\FileStorage\File\2023-02\applet-chat)
+2023-03-15 23:56:42.603 [restartedMain] DEBUG com.chat.message.MessageApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2023-03-15 23:56:42.603 [restartedMain] INFO  com.chat.message.MessageApplication - The following profiles are active: dev
+2023-03-15 23:56:42.643 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\JetBrains\IntelliJ IDEA 2017.3\plugins\maven\lib\maven3\respository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/D:/JetBrains/IntelliJ%20IDEA%202017.3/plugins/maven/lib/maven3/respository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2023-03-15 23:56:42.644 [restartedMain] INFO  o.s.boot.devtools.restart.ChangeableUrls - The Class-Path manifest attribute in D:\JetBrains\IntelliJ IDEA 2017.3\plugins\maven\lib\maven3\respository\com\sun\xml\bind\jaxb-impl\2.3.0\jaxb-impl-2.3.0.jar referenced one or more files that do not exist: file:/D:/JetBrains/IntelliJ%20IDEA%202017.3/plugins/maven/lib/maven3/respository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-core.jar
+2023-03-15 23:56:42.644 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-15 23:56:42.644 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-15 23:56:43.884 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http)
+2023-03-15 23:56:43.889 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2023-03-15 23:56:43.889 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-15 23:56:43.889 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-03-15 23:56:44.027 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring embedded WebApplicationContext
+2023-03-15 23:56:44.028 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1384 ms
+2023-03-15 23:56:44.169 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-03-15 23:56:44.424 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-03-15 23:56:45.877 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-15 23:56:45.902 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2023-03-15 23:56:45.918 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '/message-server'
+2023-03-15 23:56:45.928 [restartedMain] INFO  com.chat.message.MessageApplication - Started MessageApplication in 3.864 seconds (JVM running for 5.689)
+2023-03-15 23:56:51.893 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/message-server] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 23:56:51.894 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-15 23:56:51.895 [http-nio-9999-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-15 23:56:52.034 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ? AND password = ?) 
+2023-03-15 23:56:52.053 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 19936771062(String), 123(String)
+2023-03-15 23:56:52.072 [http-nio-9999-exec-1] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-03-15 23:56:53.053 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (open_id <> ?) 
+2023-03-15 23:56:53.054 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-03-15 23:56:53.057 [http-nio-9999-exec-2] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 5
+2023-03-15 23:56:59.339 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (username = ? AND password = ?) 
+2023-03-15 23:56:59.340 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 19936771062(String), 123(String)
+2023-03-15 23:56:59.342 [http-nio-9999-exec-3] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 1
+2023-03-15 23:56:59.457 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - ==>  Preparing: SELECT id,name,avatar,open_id,username,password FROM user WHERE (open_id <> ?) 
+2023-03-15 23:56:59.459 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - ==> Parameters: 1111(String)
+2023-03-15 23:56:59.461 [http-nio-9999-exec-4] DEBUG com.chat.message.dao.UserDao.selectList - <==      Total: 5
